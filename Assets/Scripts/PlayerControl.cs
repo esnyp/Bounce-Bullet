@@ -52,9 +52,9 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(other.gameObject.tag == "Ball")
+        if(collision.gameObject.tag == "Ball")
         {
             audioPlayer.Play();
         }
