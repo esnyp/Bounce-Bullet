@@ -25,7 +25,7 @@ public class powerUpSpawner : MonoBehaviour
         
     }
 
-    IEnumerator spawnPowerUp()
+   public IEnumerator spawnPowerUp()
     {
 
         int ranInt = Random.Range(2, 5);
