@@ -8,6 +8,7 @@ public class HUDManager : MonoBehaviour
 
     public Text healthText;
     public Text enemyHealthText;
+    public Canvas endScreen;
 
     public int currentHealth = 3;
     public int maxHealth = 3;
@@ -36,8 +37,12 @@ public class HUDManager : MonoBehaviour
     void Update()
     {
         healthText.text = playerHealthPrefix + currentHealth.ToString();
+        enemyHealthText.text = enemyHealthPrefix + enemyCurrentHealth.ToString();
 
-        enemyHealthText.text = playerHealthPrefix + enemyCurrentHealth.ToString();
+        if (currentHealth <= 0)
+        {
+          playerDeath();
+        }
     }
 
    public void takeDamage()
@@ -69,9 +74,7 @@ public class HUDManager : MonoBehaviour
 
     public void playerDeath()
     {
-        if(currentHealth == 0)
-        {
-
-        }
+        endScreen.gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 }

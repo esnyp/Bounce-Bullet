@@ -23,7 +23,7 @@ public class BallControl : MonoBehaviour
         //generating random number based on possible initial directions
         int rand = 1;
             //Random.Range(1, 4);
-        Debug.Log(rand);
+       
 
         //setting initial direction
         if(rand == 1)
