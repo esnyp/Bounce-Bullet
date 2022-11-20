@@ -8,9 +8,14 @@ public class powerUpSpawner : MonoBehaviour
     public GameObject hurtEnemyPower;
     public GameObject objectToSpawn;
     // Start is called before the first frame update
-   public void Start()
+
+    private void Awake()
     {
         StartCoroutine(spawnPowerUp());
+    }
+    void Start()
+    {
+        
         
     }
 
