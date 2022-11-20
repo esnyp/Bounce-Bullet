@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class powerUpSpawner : MonoBehaviour
 {
+    public GameObject healthUpPower;
+    public GameObject hurtEnemyPower;
     public GameObject objectToSpawn;
     // Start is called before the first frame update
-    void Start()
+   public void Start()
     {
         StartCoroutine(spawnPowerUp());
         
@@ -20,7 +22,18 @@ public class powerUpSpawner : MonoBehaviour
 
     IEnumerator spawnPowerUp()
     {
-       int ranInt = Random.Range(5, 40);
+
+        int ranInt = Random.Range(2, 5);
+        int ranInt2 = Random.Range(1, 3);
+        Debug.Log(ranInt2);
+        if(ranInt2 == 2)
+        {
+            objectToSpawn = healthUpPower; 
+        }
+        else
+        {
+            objectToSpawn = hurtEnemyPower;
+        }
 
      yield return new WaitForSeconds(ranInt);
         Instantiate(objectToSpawn, transform.position, objectToSpawn.transform.rotation);
