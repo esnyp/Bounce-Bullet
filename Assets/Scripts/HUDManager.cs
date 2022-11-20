@@ -12,8 +12,8 @@ public class HUDManager : MonoBehaviour
     public int currentHealth = 3;
     public int maxHealth = 3;
 
-    public int enemyCurrentHealth = 3;
-    public int enemyMaxHealth = 3;
+    public int enemyCurrentHealth = 5;
+    public int enemyMaxHealth = 5;
 
     public string playerHealthPrefix = "Player Health:  ";
     public string enemyHealthPrefix = "Enemy Health:  ";
@@ -65,5 +65,13 @@ public class HUDManager : MonoBehaviour
         }
         
 
+    }
+
+    public void playerDeath()
+    {
+        if(currentHealth == 0)
+        {
+
+        }
     }
 }

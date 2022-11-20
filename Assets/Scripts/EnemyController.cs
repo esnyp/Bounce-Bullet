@@ -17,6 +17,8 @@ public class EnemyController : MonoBehaviour
     public float topBound = 4.5f;
     public float bottomBound = -4.5f;
 
+    public AudioSource audioPlayer2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,4 +65,14 @@ public class EnemyController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, bottomBound, 0);
         }
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Ball")
+        {
+            audioPlayer2.Play();
+        }
+    }
+
+
 }

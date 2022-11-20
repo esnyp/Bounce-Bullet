@@ -11,6 +11,8 @@ public class PlayerControl : MonoBehaviour
     public float topBound = 4.5f;
     public float bottomBound = -4.5f;
 
+    public AudioSource audioPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class PlayerControl : MonoBehaviour
         {
             Time.timeScale = 0;
         }
+
     }
 
     private void FixedUpdate()
@@ -46,6 +49,14 @@ public class PlayerControl : MonoBehaviour
         else if (transform.position.y < bottomBound)
         {
             transform.position = new Vector3(transform.position.x, bottomBound, 0);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Ball")
+        {
+            audioPlayer.Play();
         }
     }
 }
