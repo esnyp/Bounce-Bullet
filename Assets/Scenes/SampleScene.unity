@@ -3367,10 +3367,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2137069496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfaf2a18b9418784396bd25ee0123e7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f71e3376cb03264aa5fd759f14f8f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStartScene: 1
+  gameStartScene: 2
 --- !u!114 &2137069499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3416,7 +3416,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2137069498}
-        m_TargetAssemblyTypeName: StartGameButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: loadLevel2, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -3426,7 +3426,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
 --- !u!114 &2137069500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3486,11 +3486,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8348743432253952206, guid: 99d8acffb4cca3244b31d276516a94c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -10.55
       objectReference: {fileID: 0}
     - target: {fileID: 8348743432253952206, guid: 99d8acffb4cca3244b31d276516a94c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 8348743432253952206, guid: 99d8acffb4cca3244b31d276516a94c2, type: 3}
       propertyPath: m_LocalPosition.z
