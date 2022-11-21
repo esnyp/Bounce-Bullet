@@ -5,6 +5,7 @@ using UnityEngine;
 public class BallSpawnerController : MonoBehaviour
 {
     public GameObject ball;
+
     // Start is called before the first frame update
     void Start()
     {
