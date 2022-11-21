@@ -2431,6 +2431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthUpPower: {fileID: 930148614}
   hurtEnemyPower: {fileID: 988685268}
+  scalePower: {fileID: 103496418}
   objectToSpawn: {fileID: 0}
 --- !u!4 &1105140383
 Transform:
@@ -2487,11 +2488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6496296104845345551, guid: 5b532ea618a393d4999d80704848d221, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.44
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 6496296104845345551, guid: 5b532ea618a393d4999d80704848d221, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04
+      value: 7.13
       objectReference: {fileID: 0}
     - target: {fileID: 6496296104845345551, guid: 5b532ea618a393d4999d80704848d221, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2909,6 +2910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthUpPower: {fileID: 930148614}
   hurtEnemyPower: {fileID: 988685268}
+  scalePower: {fileID: 103496418}
   objectToSpawn: {fileID: 0}
 --- !u!4 &1250266758
 Transform:
@@ -3696,6 +3698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthUpPower: {fileID: 930148614}
   hurtEnemyPower: {fileID: 988685268}
+  scalePower: {fileID: 103496418}
   objectToSpawn: {fileID: 0}
 --- !u!4 &1640877844
 Transform:
@@ -4182,6 +4185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthUpPower: {fileID: 930148614}
   hurtEnemyPower: {fileID: 988685268}
+  scalePower: {fileID: 103496418}
   objectToSpawn: {fileID: 0}
 --- !u!4 &1744768210
 Transform:

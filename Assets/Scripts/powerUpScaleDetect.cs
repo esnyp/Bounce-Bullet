@@ -14,9 +14,9 @@ public class powerUpScaleDetect : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector3 newSize = new Vector3(player.transform.localScale.x* (float)1.2, 
-            player.transform.localScale.y * (float)1.2,
-            player.transform.localScale.z * (float)1.2);
+        Vector3 newSize = new Vector3(player.transform.localScale.x* (float)1.4, 
+            player.transform.localScale.y * (float)1.4,
+            player.transform.localScale.z * (float)1.4);
 
         Vector3 a = player.transform.localScale;
         player.transform.localScale = newSize;

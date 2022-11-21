@@ -6,6 +6,8 @@ public class powerUpSpawner : MonoBehaviour
 {
     public GameObject healthUpPower;
     public GameObject hurtEnemyPower;
+    public GameObject scalePower;
+
     public GameObject objectToSpawn;
     // Start is called before the first frame update
 
@@ -29,16 +31,25 @@ public class powerUpSpawner : MonoBehaviour
     {
 
         int ranInt = Random.Range(2, 5);
-        int ranInt2 = Random.Range(1, 3);
+        int ranInt2 = Random.Range(1, 4);
         Debug.Log(ranInt2);
-        if(ranInt2 == 2)
+
+        switch (ranInt2)
         {
-            objectToSpawn = healthUpPower; 
+            case 1:
+                objectToSpawn = healthUpPower;
+               break;
+            case 2:
+                objectToSpawn = hurtEnemyPower;
+                break;
+            case 3:
+                objectToSpawn = scalePower;
+                break;
+
         }
-        else
-        {
-            objectToSpawn = hurtEnemyPower;
-        }
+
+
+        
 
      yield return new WaitForSeconds(ranInt);
         Instantiate(objectToSpawn, transform.position, objectToSpawn.transform.rotation);
