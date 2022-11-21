@@ -12,6 +12,13 @@ public class PlayerControl : MonoBehaviour
     public float bottomBound = -4.5f;
 
     public AudioSource audioPlayer;
+    HUDManager hudManager;
+    [SerializeField] GameObject hpHUD;
+
+    private void Awake()
+    {
+        hudManager = hpHUD.GetComponent<HUDManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -54,9 +61,12 @@ public class PlayerControl : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ball")
+        
+
+        if (collision.gameObject.tag == "Ball")
         {
             audioPlayer.Play();
+            hudManager.scorePoint();
         }
     }
 }

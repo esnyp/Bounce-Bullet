@@ -10,6 +10,7 @@ public class HUDManager : MonoBehaviour
     public Text enemyHealthText;
     public Canvas endScreen;
     public Canvas winScreen;
+    public Text playerScore;
 
     public int currentHealth = 3;
     public int maxHealth = 3;
@@ -19,6 +20,9 @@ public class HUDManager : MonoBehaviour
 
     public string playerHealthPrefix = "Player Health:  ";
     public string enemyHealthPrefix = "Enemy Health:  ";
+    public string playerScorePrefix = "Player score: ";
+
+    public int currentScore = 0;
 
     
 
@@ -31,6 +35,9 @@ public class HUDManager : MonoBehaviour
 
         healthText.text = playerHealthPrefix + maxHealth.ToString();
         enemyHealthText.text = enemyHealthPrefix + enemyMaxHealth.ToString();
+
+        playerScore.text = playerScorePrefix + currentScore.ToString();
+       
 
     }
 
@@ -48,6 +55,9 @@ public class HUDManager : MonoBehaviour
         {
             enemyDeath();
         }
+
+        playerScore.text = playerScorePrefix + currentScore.ToString();
+        
     }
 
    public void takeDamage()
@@ -87,5 +97,10 @@ public class HUDManager : MonoBehaviour
     {
         winScreen.gameObject.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    public void scorePoint()
+    {
+        currentScore = currentScore + 1;
     }
 }
