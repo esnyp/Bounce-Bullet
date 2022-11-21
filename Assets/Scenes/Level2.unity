@@ -2388,7 +2388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfaf2a18b9418784396bd25ee0123e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStartScene: 1
+  gameStartScene: 2
 --- !u!1 &1250266756
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,7 +3401,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 1, y: 0.7}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
