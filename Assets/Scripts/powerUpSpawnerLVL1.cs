@@ -29,7 +29,7 @@ public class powerUpSpawnerLVL1 : MonoBehaviour
     public IEnumerator spawnPowerUp()
     {
 
-        int ranInt = Random.Range(2, 5);
+        int ranInt = Random.Range(3, 20);
         int ranInt2 = Random.Range(1, 3);
         Debug.Log(ranInt2);
 

@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
 
     public float topBound = 4.5f;
     public float bottomBound = -4.5f;
-
+    public float speed = 2.75f;
     public AudioSource audioPlayer2;
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float speed = 2.75f;
+        
 
         //finding the ball
         if (ball == null)

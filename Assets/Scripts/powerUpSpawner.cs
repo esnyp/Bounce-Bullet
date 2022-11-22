@@ -30,7 +30,7 @@ public class powerUpSpawner : MonoBehaviour
    public IEnumerator spawnPowerUp()
     {
 
-        int ranInt = Random.Range(2, 5);
+        int ranInt = Random.Range(2, 40);
         int ranInt2 = Random.Range(1, 4);
         Debug.Log(ranInt2);
 
